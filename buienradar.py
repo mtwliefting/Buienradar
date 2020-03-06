@@ -7,10 +7,9 @@ data = json.loads(data.read())
 temp = [40]
 a = 1
 
-#with imageio.get_writer('~/Desktop/earth3.gif', mode='I') as writer:
 
 for i in data["actual"]["stationmeasurements"]:
-        #filename = i['actual']['stationmeasurements']
+    
        
         if 'temperature' in i:
             temp = str(i["temperature"])
