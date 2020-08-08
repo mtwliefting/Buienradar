@@ -2,7 +2,7 @@ import sys
 import json
 import urllib.request as urllib2
 
-data = urllib2.urlopen('https://data.buienradar.nl/2.0/feed/json')
+data = urllib2.urlopen('https://data.buienradar.nl/2.0/feed/json',data=None)
 data = json.loads(data.read())
 temp = [40]
 a = 1
